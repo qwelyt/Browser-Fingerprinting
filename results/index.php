@@ -10,7 +10,7 @@
 	<body>
 	<?php
 	// Create connection
-	$mysqli = new mysqli('localhost', 'metodUser', 'UmADwL2tpqXyPnxm', 'metod');
+	$mysqli = new mysqli($host, $user, $pass, $database);
 
 	// gent = (nrInGroup / sampleSize) * log2(nrInGroup/sampleSize)
 
