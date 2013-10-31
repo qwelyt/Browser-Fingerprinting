@@ -1,0 +1,103 @@
+/*
+ * CSS version 0.1
+ */
+
+@font-face {
+    font-family: 'sirin';
+    src: url('webfonts/sirinstencil-regular-webfont.eot');
+    src: url('webfonts/sirinstencil-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/sirinstencil-regular-webfont.woff') format('woff'),
+         url('webfonts/sirinstencil-regular-webfont.ttf') format('truetype'),
+         url('webfonts/sirinstencil-regular-webfont.svg#sirinstencilregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*--Make sure the footer is at the bottom --*/
+html{
+	height:100%;
+}
+body { 
+	height: 98%; 
+	background:#ddd;
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#wrap{
+       	height: 100%;
+       	height: auto !important;
+       	min-height: 100%; 
+	/*This bottom margin should be minus, and also the height size of your footer)*/
+	margin: 0px auto -2em;
+}
+
+.push { /*Again, this should be the height size of the footer*/
+	height: 2em; 
+}
+#footer { 
+	height: 2em; 
+} 
+/*------*/
+
+
+#toAbout, #backToTests{ /* Set this to the webfont so we know that it has been downloaded for the test */
+	font-family:sirin;
+}
+.info{
+	font-size:0.8em;
+}
+
+#startButtonHolder{
+	width:20%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#startButton{
+	border-radius:45px;
+	height:70px;
+	width:70px;
+	background:#f33;
+	color:#fff;
+	font-weight:bold;
+	font-size:1.0em;
+}
+#startButton:hover{
+	background:#f88;
+}
+
+
+#results{
+	display:none;
+	width:99%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#rTable{
+	width:99%;
+	margin-left:auto;
+	margin-right:auto;
+	empty-cells:hide;
+}
+#tesCol{
+}
+#valCol{
+	width:419px;
+	padding-left:2px;
+	padding-right:2px;
+}
+#resCol, #r1, #r2, #r3, #r4, #r5, #r6, #rA{
+	text-align:center;
+}
+table{
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+table, th, td{
+	border:1px solid #000;
+}
+td{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
